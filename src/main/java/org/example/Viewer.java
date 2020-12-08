@@ -1,25 +1,28 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class Viewer {
     private String name;
     private int age;
-    private int viewed;
+    private ArrayList<Cinema> cinemaArray;
 
     public int getAge() {
         return age;
     }
 
-    public int getViewed() {
-        return viewed;
-    }
 
     public String getName() {
         return name;
     }
 
-    public Viewer(String name, int age, int viewed){
+    public ArrayList<Cinema> getCinemaArray() {
+        return cinemaArray;
+    }
+
+    public Viewer(String name, int age, ArrayList<Cinema> cinemas){
         this.name = name;
         this.age = age;
-        this.viewed = viewed;
+        this.cinemaArray = cinemas;
     }
 }
